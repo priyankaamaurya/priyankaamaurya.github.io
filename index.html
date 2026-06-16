@@ -295,6 +295,7 @@
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
@@ -362,79 +363,12 @@
 
     <!-- TABS -->
     <div class="about-tabs">
-      <button class="tab-btn active" onclick="showTab('skills')">Skills</button>
-      <button class="tab-btn" onclick="showTab('experience')">Experience</button>
+      <button class="tab-btn active" onclick="showTab('experience')">Experience</button>
       <button class="tab-btn" onclick="showTab('education')">Education</button>
     </div>
 
-    <!-- SKILLS TAB -->
-    <div class="tab-content active" id="tab-skills">
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-java" style="color:#f89820;"></i></div>
-          <div class="skill-name" style="color:#f89820;">Java 8</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fas fa-database" style="color:#38bdf8;"></i></div>
-          <div class="skill-name" style="color:#38bdf8;">JDBC</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><img src="https://cdn.worldvectorlogo.com/logos/hibernate.svg" width="42" height="42" alt="Hibernate" style="object-fit:contain;"/></div>
-          <div class="skill-name" style="color:#bcaaa4;">Hibernate</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" width="42" height="42" alt="Spring"/></div>
-          <div class="skill-name" style="color:#6db33f;">Spring</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" width="42" height="42" alt="Spring Boot" style="filter:hue-rotate(20deg);"/></div>
-          <div class="skill-name" style="color:#6db33f;">Spring Boot</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fas fa-database" style="color:#00758f;"></i></div>
-          <div class="skill-name" style="color:#00758f;">SQL</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-html5" style="color:#e34f26;"></i></div>
-          <div class="skill-name" style="color:#e34f26;">HTML5</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-css3-alt" style="color:#1572b6;"></i></div>
-          <div class="skill-name" style="color:#1572b6;">CSS3</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-js-square" style="color:#f7df1e;"></i></div>
-          <div class="skill-name" style="color:#f7df1e;">JavaScript</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-react" style="color:#61dafb;"></i></div>
-          <div class="skill-name" style="color:#61dafb;">React.js</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-git-alt" style="color:#f05032;"></i></div>
-          <div class="skill-name" style="color:#f05032;">Git</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-github" style="color:#fff;"></i></div>
-          <div class="skill-name" style="color:#fff;">GitHub</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fas fa-book" style="color:#85ea2d;"></i></div>
-          <div class="skill-name" style="color:#85ea2d;">Swagger UI</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="42" height="42" alt="Postman"/></div>
-          <div class="skill-name" style="color:#ff6c37;">Postman</div>
-        </div>
-        <div class="skill-card">
-          <div class="skill-icon"><i class="fab fa-aws" style="color:#ff9900;"></i></div>
-          <div class="skill-name" style="color:#ff9900;">REST APIs</div>
-        </div>
-      </div>
-    </div>
-
     <!-- EXPERIENCE TAB -->
-    <div class="tab-content" id="tab-experience">
+    <div class="tab-content active" id="tab-experience">
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-date">Oct 2025 — Present</div>
@@ -470,9 +404,80 @@
     </div>
   </div>
 </section>
-
 <div class="divider"></div>
 
+<!-- SKILLS -->
+<section id="skills">
+  <div class="fade-up">
+    <div class="section-tag">Skills</div>
+    <h2 class="section-title">My Technical <span>Skills</span></h2>
+    <p class="section-desc">Technologies and tools I work with to build full-stack applications.</p>
+  </div>
+  <div class="skills-grid fade-up">
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fab fa-java" style="color:#f89820;"></i></div>
+      <div class="skill-name" style="color:#f89820;">Java</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-database" style="color:#38bdf8;"></i></div>
+      <div class="skill-name" style="color:#38bdf8;">JDBC</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><img src="https://cdn.worldvectorlogo.com/logos/hibernate.svg" width="42" height="42" alt="Hibernate" style="object-fit:contain;"/></div>
+      <div class="skill-name" style="color:#bcaaa4;">Hibernate</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" width="42" height="42" alt="Spring"/></div>
+      <div class="skill-name" style="color:#6db33f;">Spring</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" width="42" height="42" alt="Spring Boot" style="filter:hue-rotate(20deg);"/></div>
+      <div class="skill-name" style="color:#6db33f;">Spring Boot</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-database" style="color:#00758f;"></i></div>
+      <div class="skill-name" style="color:#00758f;">SQL</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fab fa-html5" style="color:#e34f26;"></i></div>
+      <div class="skill-name" style="color:#e34f26;">HTML5</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fab fa-css3-alt" style="color:#1572b6;"></i></div>
+      <div class="skill-name" style="color:#1572b6;">CSS3</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fab fa-js-square" style="color:#f7df1e;"></i></div>
+      <div class="skill-name" style="color:#f7df1e;">JavaScript</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fab fa-react" style="color:#61dafb;"></i></div>
+      <div class="skill-name" style="color:#61dafb;">React.js</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fab fa-git-alt" style="color:#f05032;"></i></div>
+      <div class="skill-name" style="color:#f05032;">Git</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fab fa-github" style="color:#fff;"></i></div>
+      <div class="skill-name" style="color:#fff;">GitHub</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-book" style="color:#85ea2d;"></i></div>
+      <div class="skill-name" style="color:#85ea2d;">Swagger UI</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" width="42" height="42" alt="Postman"/></div>
+      <div class="skill-name" style="color:#ff6c37;">Postman</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon"><i class="fas fa-plug" style="color:#a78bfa;"></i></div>
+      <div class="skill-name" style="color:#a78bfa;">REST APIs</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
 <!-- PROJECTS -->
 <section id="projects">
   <div class="fade-up">
