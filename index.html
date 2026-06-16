@@ -32,28 +32,7 @@
 
   /* NAVBAR */
   nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 18px 60px; background: rgba(6,6,18,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
-.nav-logo {
-  font-family: 'Syne', sans-serif;
-  font-size: 16px;
-  font-weight: 800;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(124,58,237,0.15);
-  border: 2px solid rgba(124,58,237,0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--accent);
-  box-shadow: 0 0 15px rgba(124,58,237,0.3);
-  animation: logoPulse 3s infinite;
-  line-height: 1;
-  text-align: center;
-  flex-shrink: 0;
-  -webkit-text-fill-color: var(--accent);
-  background-clip: unset;
-  -webkit-background-clip: unset;
-}
+  .nav-logo { font-family: 'Syne', sans-serif; font-size: 22px; font-weight: 800; background: linear-gradient(135deg, var(--accent), var(--accent2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
   @keyframes logoPulse { 0%,100% { box-shadow: 0 0 15px rgba(124,58,237,0.3); } 50% { box-shadow: 0 0 30px rgba(124,58,237,0.6), 0 0 60px rgba(124,58,237,0.2); } }
   .nav-links { display: flex; gap: 36px; list-style: none; }
   .nav-links a { color: var(--muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; }
@@ -238,7 +217,7 @@
       <div class="hero-tag">Available for Work</div>
       <h1 class="hero-name">Priyanka<br/><span>Maurya</span></h1>
       <p class="hero-role">Java Full Stack Developer</p>
-      <p class="hero-desc">Building secure, scalable and efficient web applications with Java, Spring Boot, and modern frontend technologies. Passionate about clean architecture and real-world solutions.</p>
+      <p class="hero-desc">Building secure, scalable and efficient web applications with Java, Spring Boot, and modern frontend technologies. Passionate about clean architecture and real-world solutions. </p>
       <div class="hero-btns">
         <a href="#projects" class="btn-primary">View Projects →</a>
         <a href="#contact" class="btn-ghost">✉ Contact Me</a>
@@ -286,7 +265,8 @@
     <div class="section-tag">About Me</div>
     <h2 class="section-title">About <span>Me</span></h2>
     <p style="color:var(--muted);font-size:16px;line-height:1.8;max-width:700px;margin-bottom:36px;">
-      Motivated BCA student skilled in Java, Spring Boot, and React.js. Experienced in building secure REST APIs using JWT authentication, cart management, product management, and order processing. Passionate about developing scalable backend systems.
+     Aspiring Software Engineer with hands-on experience building scalable and secure RESTful APIs using Java, Spring Boot, and MySQL. Proficient in implementing JWT-based authentication, designing efficient backend systems, and integrating APIs with modern frontend applications. Strong foundation in data structures and problem-solving, with a keen interest in building reliable and high-performance systems. 
+      <!-- Motivated BCA student skilled in Java, Spring Boot, and React.js. Experienced in building secure REST APIs using JWT authentication, cart management, product management, and order processing. Passionate about developing scalable backend systems. -->
     </p>
 
     <!-- TABS -->
@@ -302,7 +282,7 @@
           <div class="timeline-date">Oct 2025 — Present</div>
           <div class="timeline-title">Java Full Stack Training & Internship</div>
           <div class="timeline-org">QSpiders</div>
-          <div class="timeline-desc">Hands-on training covering Core Java, JDBC, Hibernate, Spring, Spring Boot, REST APIs, SQL, HTML, CSS, JavaScript, and React.js. Built real-world projects including a full-stack e-commerce application.</div>
+          <div class="timeline-desc">Hands-on training covering Core Java, JDBC, Hibernate, Spring, Spring Boot, REST APIs, SQL, HTML5, CSS3, JavaScript, and React.js. Built real-world projects including a full-stack e-commerce application.</div>
         </div>
       </div>
     </div>
@@ -552,7 +532,7 @@
   <div>© 2026 Priyanka Maurya. All rights reserved.</div>
   <div style="display:flex;gap:12px;">
     <a href="https://github.com/priyankaamaurya" target="_blank" style="color:var(--muted);text-decoration:none;font-size:13px;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">GitHub</a>
-    <a href="#" style="color:var(--muted);text-decoration:none;font-size:13px;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">LinkedIn</a>
+    <a href="https://linkedin.com" target="_blank" style="color:var(--muted);text-decoration:none;font-size:13px;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--muted)'">LinkedIn</a>
   </div>
 </footer>
 
