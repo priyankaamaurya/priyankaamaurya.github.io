@@ -191,6 +191,10 @@
 .nav-links a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: linear-gradient(90deg, var(--accent), var(--accent2)); border-radius: 2px; transition: width 0.3s ease; }
 .nav-links a:hover::after { width: 100%; }  
 </style>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  emailjs.init("qtlQqCJK5v16MGE6C");
+</script>
 </head>
 <body>
 
@@ -404,7 +408,7 @@
         </div>
       </div>
       <div class="project-body">
-        <p class="project-desc">A complete full-stack e-commerce platform with JWT auth, role-based access, product management, cart, orders, and email notifications via SendGrid. Deployed on Railway + Vercel.</p>
+        <p class="project-desc">A complete full-stack e-commerce platform with JWT auth, role-based access, product management, cart, orders, and email notifications via SendGrid. Deployed on Render + Neon PostgreSQL + Vercel.</p>
         <div class="project-tags">
           <span class="tag">Java</span>
           <span class="tag">Spring Boot</span>
@@ -412,7 +416,8 @@
           <span class="tag cyan">React.js</span>
           <span class="tag cyan">Vite</span>
           <span class="tag">PostgreSQL</span>
-          <span class="tag">Railway</span>
+          <span class="tag">Neon</span>
+          <span class="tag">Render</span>
           <span class="tag cyan">Vercel</span>
         </div>
       </div>
@@ -521,7 +526,7 @@
         <label class="form-label">Message</label>
         <textarea class="form-input" placeholder="Your message here..." required></textarea>
       </div>
-      <button type="submit" class="btn-primary" style="border:none;width:100%;justify-content:center;">🚀 Send Message</button>
+      <button type="submit" class="btn-primary" style="border:none;width:100%;justify-content:center;">Send Message</button>
     </form>
   </div>
 </section>
@@ -569,12 +574,26 @@
 
   // Form
   function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button[type=submit]');
-    btn.textContent = '✅ Message Sent!';
-    btn.style.background = 'linear-gradient(135deg,#06b6d4,#0891b2)';
-    setTimeout(() => { btn.textContent = '🚀 Send Message'; btn.style.background = ''; e.target.reset(); }, 3000);
-  }
+  e.preventDefault();
+  const btn = e.target.querySelector('button[type=submit]');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+
+  emailjs.sendForm('service_e7s9v9m', 'template_n36lv6y', e.target)
+    .then(() => {
+      btn.textContent = 'Message Sent!';
+      btn.style.background = 'linear-gradient(135deg,#06b6d4,#0891b2)';
+      setTimeout(() => {
+        btn.textContent = 'Send Message';
+        btn.style.background = '';
+        btn.disabled = false;
+        e.target.reset();
+      }, 3000);
+    }, (error) => {
+      btn.textContent = 'Failed! Try again';
+      btn.disabled = false;
+    });
+}
 </script>
 </body>
 </html>
